@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap");
 
 /* Nav Start */
 *,
@@ -81,17 +82,18 @@ nav {
   display: block;
   color: #eee;
   padding: 0 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   transition: color 250ms;
 }
 
 .nav-list a:hover {
   color: gray;
+  text-decoration: none;
 }
 
 .sub-menu {
-  width: 20rem;
+  width: 22rem;
   display: block;
   position: absolute;
   border-top: 3px solid gray;
@@ -187,3 +189,64 @@ nav {
   }
 }
 /* Nav End */
+/* Carousel Start */
+
+/* Cards Start */
+#cards {
+  padding: 70px 50px;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#cards h2 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.cards-section p {
+  font-size: 3rem;
+}
+
+.card-body {
+  text-align: center;
+}
+.card-body > h5 {
+  font-size: 3rem;
+}
+
+.card-body p {
+  font-size: 2rem;
+}
+
+.cards-column {
+  padding: 3% 2%;
+}
+
+.card-title {
+  font-weight: 900;
+}
+/* Cards End */
+/* Footer Start
+ */
+#footer {
+  background-color: #5b5378;
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+#footer h4 {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+#footer i {
+  margin: 20px 10px;
+  color: white;
+}
+#footer i:hover {
+  margin: 20px 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* Footer End */
