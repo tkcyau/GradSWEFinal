@@ -11,7 +11,7 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 10px;
 }
 
@@ -82,13 +82,14 @@ nav {
   display: block;
   color: #eee;
   padding: 0 1.5rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  font-size: 1.7rem;
+  /* text-transform: uppercase; */
   transition: color 250ms;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-list a:hover {
-  color: gray;
+  color: #b9b7cc;
   text-decoration: none;
 }
 
@@ -96,7 +97,7 @@ nav {
   width: 22rem;
   display: block;
   position: absolute;
-  border-top: 3px solid gray;
+  border-top: 3px solid white;
   background-color: #5b5378;
   z-index: 100;
   top: 16rem;
@@ -110,19 +111,19 @@ nav {
   top: -2.5rem;
   left: 3rem;
   border: 1.2rem solid transparent;
-  border-bottom-color: gray;
+  border-bottom-color: white;
 }
 
 .sub-menu .sub-menu::before {
   top: 0.9rem;
   left: -2.5rem;
   border: 1.2rem solid transparent;
-  border-right-color: gray;
+  border-right-color: white;
 }
 
 .sub-menu .sub-menu {
   border-top: none;
-  border-left: 3px solid gray;
+  border-left: 3px solid white;
   top: 0;
   left: 160%;
 }
@@ -159,7 +160,7 @@ nav {
   .sub-menu {
     position: initial;
     border: 3px solid transparent;
-    border-left-color: gray;
+    border-left-color: white;
     margin-left: 1rem;
     max-height: 0;
   }
@@ -190,20 +191,27 @@ nav {
 }
 /* Nav End */
 /* Carousel Start */
+.carousel img {
+  /* width: 100%; */
+  height: 90vh;
+  object-fit: cover;
+}
 
 /* Cards Start */
 #cards {
   padding: 70px 50px;
   font-family: "Montserrat", sans-serif;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #f4f4f4;
+  color: #4b4563;
 }
 #cards h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
 }
 
 .cards-section p {
-  font-size: 3rem;
+  font-size: 2rem;
+  /* color: #7f8999; */
 }
 
 .card-body {
@@ -247,6 +255,141 @@ nav {
 }
 #footer i:hover {
   margin: 20px 10px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #b9b7cc;
 }
 /* Footer End */
+/* Exec Board Team Section start*/
+.exec {
+  color: #4b4563;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 5rem;
+}
+.title h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+}
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  grid-gap: 20px;
+  align-items: stretch;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.profiles > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.profiles > article img {
+  max-width: 100%;
+}
+
+.profiles {
+  font-size: 2rem;
+}
+
+.profiles a {
+  /* text-decoration: underline; */
+  color: inherit;
+}
+
+.profiles p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+/* Exec Board Team Section End */
+/* Naomi Bio Start */
+.personal-bio {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.personal-bio .title h1 {
+  font-weight: 400;
+  padding-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.personal-bio .title p {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin-bottom: 5rem;
+}
+
+.personal-bio .title p::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: black;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+.personal-bio .bio {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.personal-bio article img {
+  width: 40rem;
+  margin: 0 1.5rem 0rem 5rem;
+}
+.personal-bio article p {
+  text-align: left;
+  font-size: 2rem;
+  width: 400px;
+  margin: 0 5rem 0 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .personal-bio .bio {
+    display: block;
+  }
+  .personal-bio article img {
+    width: 40rem;
+    margin: 0 3rem;
+  }
+  .personal-bio article p {
+    text-align: left;
+    font-size: 2rem;
+    width: 40rem;
+    margin: 3rem auto;
+  }
+}
+/* .personal-bio Bio End */ /* Upcoming Events start*/
+.upcomingevents {
+  font-family: "Montserrat", sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 5rem;
+}
+
+.upcomingevents h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+  color: #4b4563;
+}
+
+.responsiveCal {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsiveCal iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Upcoming Events end */
