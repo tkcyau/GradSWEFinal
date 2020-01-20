@@ -18,6 +18,6 @@ app.get("/natalia", (req, res) => res.render("natalia"));
 
 app.get("/upcomingevents", (req, res) => res.render("upcomingevents"));
 
-app.listen(port, () => {
+app.listen(process.env.port || port, () => {
   console.log("Server is running!");
 });
