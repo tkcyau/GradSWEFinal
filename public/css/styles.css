@@ -352,13 +352,13 @@ nav {
     display: block;
   }
   .personal-bio article img {
-    width: 40rem;
+    width: 30rem;
     margin: 0 3rem;
   }
   .personal-bio article p {
     text-align: left;
     font-size: 2rem;
-    width: 40rem;
+    width: 30rem;
     margin: 3rem auto;
   }
 }
