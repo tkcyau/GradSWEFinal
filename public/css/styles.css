@@ -303,11 +303,12 @@ nav {
   font-style: italic;
 }
 /* Exec Board Team Section End */
-/* Naomi Bio Start */
+/* Personal Bios Start */
 .personal-bio {
   font-family: "Montserrat", sans-serif;
   background-color: #f4f4f4;
   text-align: center;
+  color: #4b4563;
 }
 
 .personal-bio .title h1 {
@@ -362,7 +363,9 @@ nav {
     margin: 3rem auto 0 auto;
   }
 }
-/* .personal-bio Bio End */ /* Upcoming Events start*/
+/* .personal-bio Bio End */
+
+/* Upcoming Events start*/
 .upcomingevents {
   font-family: "Montserrat", sans-serif;
   background: #f4f4f4;
