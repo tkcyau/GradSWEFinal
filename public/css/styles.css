@@ -235,11 +235,11 @@ nav {
 .cards-column col-md-6 col-lg-4 > .card mx-auto {
   width: 40rem;
 }
-@media screen and (max-width: 850px)  {
+@media screen and (max-width: 850px) {
   .cards-column col-md-6 col-lg-4 > .card mx-auto {
     width: 30rem;
+  }
 }
-
 
 /* Cards End */
 /* Footer Start
