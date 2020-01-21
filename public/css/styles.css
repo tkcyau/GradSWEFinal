@@ -337,7 +337,7 @@ nav {
   display: block;
   width: 10%;
   height: 2px;
-  background: black;
+  background: #4b4563;
   margin: 2rem auto;
   border-radius: 20%;
 }
