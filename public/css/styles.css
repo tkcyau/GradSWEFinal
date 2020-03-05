@@ -197,6 +197,17 @@ nav {
   object-fit: cover;
 }
 
+.carousel-caption {
+  font-family: "Montserrat", sans-serif;
+}
+.carousel-caption h5 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.carousel-caption p {
+  font-size: 1.5rem;
+}
+
 /* Cards Start */
 #cards {
   padding: 6rem 5rem;
