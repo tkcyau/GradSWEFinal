@@ -274,11 +274,20 @@ nav {
   background-color: #f4f4f4;
   padding-top: 5rem;
 }
-.title h1 {
+.exec .title h1 {
   text-align: center;
   font-weight: bold;
   margin-bottom: 5rem;
   font-size: 4rem;
+}
+.exec .title h1::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
 }
 .profiles {
   display: grid;
@@ -416,8 +425,9 @@ nav {
   padding: 5rem 10rem;
 }
 .mission-statement .title h1 {
-  font-weight: 400;
   text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
   /* padding-bottom: 3rem; */
 }
 .mission-statement .body {
@@ -425,7 +435,7 @@ nav {
 }
 .mission-statement .body img {
   width: 45rem;
-  height: 34rem;
+  height: 30rem;
 }
 .mission-statement .body .paragraphs {
   display: flex;
@@ -459,9 +469,19 @@ nav {
   .mission-statement .body img {
     padding-bottom: 3rem;
     width: 40rem;
+    /* height: 26.66rem; */
   }
   .mission-statement .title h1::after {
     width: 20%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .mission-statement .body img {
+    padding-bottom: 3rem;
+    width: 35rem;
+    height: 23.33rem;
+  }
+}
+
 /* Mission statement End */
