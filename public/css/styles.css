@@ -460,5 +460,8 @@ nav {
     padding-bottom: 3rem;
     width: 40rem;
   }
+  .mission-statement .title h1::after {
+    width: 20%;
+  }
 }
 /* Mission statement End */
