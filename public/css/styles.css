@@ -413,7 +413,7 @@ nav {
   background-color: #f4f4f4;
   text-align: center;
   color: #4b4563;
-  padding: 5rem 5rem;
+  padding: 5rem 10rem;
 }
 .mission-statement .title h1 {
   font-weight: 400;
@@ -424,7 +424,8 @@ nav {
   display: flex;
 }
 .mission-statement .body img {
-  width: 33%;
+  width: 45rem;
+  height: 34rem;
 }
 .mission-statement .body .paragraphs {
   display: flex;
@@ -441,9 +442,23 @@ nav {
 .mission-statement .title h1::after {
   content: "";
   display: block;
-  width: 40%;
+  width: 10%;
   height: 2px;
   background: #4b4563;
   margin: 2rem auto;
   border-radius: 20%;
 }
+
+@media screen and (max-width: 950px) {
+  .mission-statement {
+    padding: 5rem 3rem;
+  }
+  .mission-statement .body {
+    display: block;
+  }
+  .mission-statement .body img {
+    padding-bottom: 3rem;
+    width: 40rem;
+  }
+}
+/* Mission statement End */
