@@ -199,6 +199,9 @@ nav {
 
 .carousel-caption {
   font-family: "Montserrat", sans-serif;
+
+  background-color: #5b5378;
+  opacity: 80%;
 }
 .carousel-caption h5 {
   font-weight: bold;
@@ -445,8 +448,8 @@ nav {
   display: flex;
 }
 .mission-statement .body img {
-  width: 45rem;
-  height: 30rem;
+  width: 450px;
+  height: 300px;
 }
 .mission-statement .body .paragraphs {
   display: flex;
