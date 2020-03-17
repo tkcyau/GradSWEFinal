@@ -305,7 +305,7 @@ nav {
 .exec .title h1::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 100px;
   height: 2px;
   background: #4b4563;
   margin: 2rem auto;
@@ -483,7 +483,7 @@ nav {
 .mission-statement .title h1::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 100px;
   height: 2px;
   background: #4b4563;
   margin: 2rem auto;
@@ -547,18 +547,16 @@ nav {
   background-color: #f4f4f4;
   text-align: center;
   color: #4b4563;
-  padding: 5rem 10rem;
+  padding: 5rem;
 }
 .professional .title h1 {
-  text-align: center;
   font-weight: bold;
   font-size: 4rem;
-  /* padding-bottom: 3rem; */
 }
 .professional .title h1::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 100px;
   height: 2px;
   background: #4b4563;
   margin: 2rem auto;
@@ -570,18 +568,16 @@ nav {
   background-color: #f4f4f4;
   text-align: center;
   color: #4b4563;
-  padding: 5rem 10rem;
+  padding: 5rem;
 }
 .social .title h1 {
-  text-align: center;
   font-weight: bold;
   font-size: 4rem;
-  /* padding-bottom: 3rem; */
 }
 .social .title h1::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 100px;
   height: 2px;
   background: #4b4563;
   margin: 2rem auto;
@@ -594,18 +590,16 @@ nav {
   background-color: #f4f4f4;
   text-align: center;
   color: #4b4563;
-  padding: 5rem 10rem;
+  padding: 5rem;
 }
 .outreach .title h1 {
-  text-align: center;
   font-weight: bold;
   font-size: 4rem;
-  /* padding-bottom: 3rem; */
 }
 .outreach .title h1::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 100px;
   height: 2px;
   background: #4b4563;
   margin: 2rem auto;
