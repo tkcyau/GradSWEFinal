@@ -14,8 +14,11 @@ app.get("/xueying", (req, res) => res.render("xueying"));
 app.get("/erical", (req, res) => res.render("erical"));
 app.get("/tiffany", (req, res) => res.render("tiffany"));
 app.get("/natalia", (req, res) => res.render("natalia"));
-
 app.get("/upcomingevents", (req, res) => res.render("upcomingevents"));
+app.get("/resources", (req, res) => res.render("resources"));
+app.get("/professional", (req, res) => res.render("professional"));
+app.get("/social", (req, res) => res.render("social"));
+app.get("/outreach", (req, res) => res.render("outreach"));
 
 // app.listen(process.env.port || port, () => {
 //   console.log("Server is running!");

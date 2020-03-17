@@ -226,6 +226,10 @@ nav {
   font-size: 6rem;
   font-weight: 900;
 }
+.cards-section h5 a {
+  text-decoration: none;
+  color: #4b4563;
+}
 
 .cards-section p {
   font-size: 2rem;
@@ -411,11 +415,20 @@ nav {
   padding: 5rem;
 }
 
-.upcomingevents h1 {
+.upcomingevents .title h1 {
   font-weight: bold;
   font-size: 4rem;
   padding-bottom: 3rem;
   color: #4b4563;
+}
+.upcomingevents .title h1::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
 }
 
 .responsiveCal {
@@ -501,5 +514,101 @@ nav {
     height: 23.33rem;
   }
 }
-
 /* Mission statement End */
+/* Resources Start */
+.resources {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  color: #4b4563;
+  padding: 5rem 10rem;
+}
+.resources .title h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  /* padding-bottom: 3rem; */
+}
+.resources .title h1::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+/* Resources End */
+/* Professional Start */
+
+/* Professional End */
+.professional {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  color: #4b4563;
+  padding: 5rem 10rem;
+}
+.professional .title h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  /* padding-bottom: 3rem; */
+}
+.professional .title h1::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+/* Social Start */
+.social {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  color: #4b4563;
+  padding: 5rem 10rem;
+}
+.social .title h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  /* padding-bottom: 3rem; */
+}
+.social .title h1::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+/* Social End */
+/* Outreach start */
+.outreach {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  color: #4b4563;
+  padding: 5rem 10rem;
+}
+.outreach .title h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4rem;
+  /* padding-bottom: 3rem; */
+}
+.outreach .title h1::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+/* Outreach end */
