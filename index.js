@@ -19,6 +19,7 @@ app.get("/resources", (req, res) => res.render("resources"));
 app.get("/professional", (req, res) => res.render("professional"));
 app.get("/social", (req, res) => res.render("social"));
 app.get("/outreach", (req, res) => res.render("outreach"));
+app.get("/contact", (req, res) => res.render("contact"));
 
 // app.listen(process.env.port || port, () => {
 //   console.log("Server is running!");

@@ -424,7 +424,7 @@ nav {
 .upcomingevents .title h1::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 100px;
   height: 2px;
   background: #4b4563;
   margin: 2rem auto;
@@ -532,7 +532,7 @@ nav {
 .resources .title h1::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 100px;
   height: 2px;
   background: #4b4563;
   margin: 2rem auto;
@@ -547,7 +547,22 @@ nav {
   background-color: #f4f4f4;
   text-align: center;
   color: #4b4563;
-  padding: 5rem;
+  /* padding: 5rem; */
+}
+.professional .header img {
+  width: 100%;
+  height: 60vh;
+  opacity: 90%;
+  object-fit: cover;
+  object-position: ;
+}
+.professional .centertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  color: white;
 }
 .professional .title h1 {
   font-weight: bold;
@@ -562,13 +577,60 @@ nav {
   margin: 2rem auto;
   border-radius: 20%;
 }
+.professional .body {
+  padding: 5rem 5rem;
+}
+
+.professional .body::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+
+.professional .body::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+
+.professional .body p {
+  font-size: 2rem;
+  text-align: left;
+}
+.professional .body .p3 {
+  margin-bottom: 0;
+}
+
 /* Social Start */
 .social {
   font-family: "Montserrat", sans-serif;
   background-color: #f4f4f4;
   text-align: center;
   color: #4b4563;
-  padding: 5rem;
+  /* padding: 5rem; */
+}
+.social .header img {
+  width: 100%;
+  height: 60vh;
+  opacity: 80%;
+  object-fit: cover;
+  object-position: ;
+}
+.social .centertext {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  color: white;
 }
 .social .title h1 {
   font-weight: bold;
@@ -583,6 +645,37 @@ nav {
   margin: 2rem auto;
   border-radius: 20%;
 }
+.social .body {
+  padding: 5rem 5rem;
+}
+
+.social .body::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+
+.social .body::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+
+.social .body p {
+  font-size: 2rem;
+  text-align: left;
+}
+.social .body .p3 {
+  margin-bottom: 0;
+}
 /* Social End */
 /* Outreach start */
 .outreach {
@@ -590,7 +683,22 @@ nav {
   background-color: #f4f4f4;
   text-align: center;
   color: #4b4563;
-  padding: 5rem;
+  /* padding: 5rem; */
+}
+.outreach .header img {
+  width: 100%;
+  height: 60vh;
+  /* opacity: 90%; */
+  object-fit: cover;
+  object-position: ;
+}
+.outreach .centertext {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  color: white;
 }
 .outreach .title h1 {
   font-weight: bold;
@@ -605,4 +713,119 @@ nav {
   margin: 2rem auto;
   border-radius: 20%;
 }
+.outreach .body {
+  padding: 5rem 5rem;
+}
+
+.outreach .body::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+
+.outreach .body::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #4b4563;
+  margin: 2rem auto;
+  border-radius: 20%;
+}
+
+.outreach .body p {
+  font-size: 2rem;
+  text-align: left;
+}
+.outreach .body .p3 {
+  margin-bottom: 0;
+}
 /* Outreach end */
+/* Contact Start */
+.contact {
+  /* width: 90%; */
+  margin: 0 auto;
+  /* max-width: 50em; */
+  padding: 5em 2em;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+  color: #4b4563;
+}
+
+.contact h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+@supports (display: grid) {
+  @media (min-width: 50em) {
+    .contact {
+      padding: 5em 10em;
+    }
+    form {
+      display: grid;
+      grid-column-gap: 1em;
+      grid-template-areas: "name        email " "message message" "     .           button";
+    }
+    form .name {
+      grid-area: name;
+    }
+    form .email {
+      grid-area: email;
+    }
+    form .message {
+      grid-area: message;
+    }
+    form .message textarea {
+      height: 10em;
+    }
+    form .button {
+      grid-area: button;
+    }
+  }
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: #606060;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: 0.75em;
+  width: 100%;
+  background: #fbfbfc;
+  border: 1px solid #e8e9eb;
+  font-size: 1.2rem;
+}
+
+.button {
+  display: inline-block;
+  width: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  background: #4b4563;
+  border: none;
+  font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  color: white;
+  /* text-transform: uppercase; */
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5em 1.5em;
+}
+
+/* Contact End */
