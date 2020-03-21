@@ -43,7 +43,8 @@ app.post("/send", (req, res) => {
     auth: {
       user: "gradsweexec@gmail.com",
       pass: "gradswe8"
-    }
+    },
+    tls: { rejectUnauthorized: false }
   });
 
   const mailOptions = {
