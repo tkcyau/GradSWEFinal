@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
+require("dotenv").config();
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -38,13 +39,21 @@ app.post("/send", (req, res) => {
     <p>Message: ${req.body.message}</p>
   `;
   // create reusable transporter object using the default SMTP transport
-  var transporter = nodemailer.createTransport({
-    service: "gmail",
+  // var transporter = nodemailer.createTransport({
+  //   service: "gmail",
+  //   auth: {
+  //     user:
+  //   },
+  //   tls: { rejectUnauthorized: false }
+  // });
+  const smtpTrans = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: "gradsweexec@gmail.com",
-      pass: "gradswe8"
-    },
-    tls: { rejectUnauthorized: false }
+      user: process.env.user,
+      pass: process.env.pass
+    }
   });
 
   const mailOptions = {
