@@ -63,7 +63,7 @@ app.post("/send", (req, res) => {
     html: output // plain text body
   };
 
-  transporter.sendMail(mailOptions, (err, info) => {
+  smtpTrans.sendMail(mailOptions, (err, info) => {
     if (err) {
       return console.log(err);
     }
