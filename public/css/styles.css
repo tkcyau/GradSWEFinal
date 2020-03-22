@@ -542,6 +542,13 @@ nav {
   text-align: left;
   font-size: 2rem;
 }
+
+@media screen and (max-width: 950px) {
+  .resources {
+    overflow-wrap: break-word;
+    padding: 5rem 3rem;
+  }
+}
 /* Resources End */
 /* Professional Start */
 
