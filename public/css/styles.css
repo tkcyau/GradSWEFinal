@@ -538,6 +538,10 @@ nav {
   margin: 2rem auto;
   border-radius: 20%;
 }
+.resources .body {
+  text-align: left;
+  font-size: 2rem;
+}
 /* Resources End */
 /* Professional Start */
 
