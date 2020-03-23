@@ -25,7 +25,7 @@ app.get("/resources", (req, res) => res.render("resources"));
 app.get("/professional", (req, res) => res.render("professional"));
 app.get("/social", (req, res) => res.render("social"));
 app.get("/outreach", (req, res) => res.render("outreach"));
-app.get("/contact", (req, res) => res.render("contact"));
+app.get("/contact", (req, res) => res.render("contact", { msg: "" }));
 
 app.post("/send", (req, res) => {
   const output = `
@@ -55,14 +55,14 @@ app.post("/send", (req, res) => {
     from: "gradsweexec@gmail.com",
     to: "gradsweexec@gmail.com",
     subject: "GradSWE Page Contact Email",
-    text: "Email Contact",
+    text: "Message from GradSWE Page",
     html: output
   };
   transporter.sendMail(mail, (err, info) => {
     if (err) {
       return console.log(err);
     } else {
-      res.render("success");
+      res.render("contact", { msg: "Message has been sent!" });
     }
   });
 });
