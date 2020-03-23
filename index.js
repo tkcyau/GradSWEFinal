@@ -29,7 +29,6 @@ app.get("/contact", (req, res) => res.render("contact"));
 
 app.post("/send", (req, res) => {
   const output = `
-    <p>You have a new contact request</p>
     <h3>Contact Details</h3>
     <ul>
         <li>Name: ${req.body.name}</li>
