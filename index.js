@@ -54,7 +54,7 @@ app.post("/send", (req, res) => {
   var mail = {
     from: "gradsweexec@gmail.com",
     to: "gradsweexec@gmail.com",
-    subject: "GradSWE Page Contact Email",
+    subject: "GradSWE Page Contact Message",
     text: "Message from GradSWE Page",
     html: output
   };
