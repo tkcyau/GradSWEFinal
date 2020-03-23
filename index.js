@@ -37,24 +37,6 @@ app.post("/send", (req, res) => {
     <h3>Message</h3>
     <p>Message: ${req.body.message}</p>
   `;
-  // create reusable transporter object using the default SMTP transport
-  // var transporter = nodemailer.createTransport({
-  //   service: "gmail",
-  //   auth: {
-  //     user:
-  //   },
-  //   tls: { rejectUnauthorized: false }
-  // });
-  // const smtpTrans = nodemailer.createTransport({
-  //   host: "smtp.gmail.com",
-  //   port: 465,
-  //   secure: true,
-  //   auth: {
-  //     user: process.env.user,
-  //     pass: process.env.pass
-  //   }
-  // });
-  // access token: ya29.a0Adw1xeXvZSyuAKDn7e_4ekz3xRU1c1ihmtME4T8rvG1TEwICQ0jC1Ea0cucft4WNLYqxlT-t3nI-GNI2XPFlQDA1fd8ZZmcBZP5aL_jr7iVFHqpMzWppiWL-G0Y8SUF20p2_aV3Ux8R1npPVagVqd6h_kmbQl--9SI4
 
   var transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -84,9 +66,7 @@ app.post("/send", (req, res) => {
     }
   });
 });
-// app.listen(process.env.port || port, () => {
-//   console.log("Server is running!");
-// });
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
