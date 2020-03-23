@@ -46,28 +46,43 @@ app.post("/send", (req, res) => {
   //   },
   //   tls: { rejectUnauthorized: false }
   // });
-  const smtpTrans = nodemailer.createTransport({
+  // const smtpTrans = nodemailer.createTransport({
+  //   host: "smtp.gmail.com",
+  //   port: 465,
+  //   secure: true,
+  //   auth: {
+  //     user: process.env.user,
+  //     pass: process.env.pass
+  //   }
+  // });
+  // access token: ya29.a0Adw1xeXvZSyuAKDn7e_4ekz3xRU1c1ihmtME4T8rvG1TEwICQ0jC1Ea0cucft4WNLYqxlT-t3nI-GNI2XPFlQDA1fd8ZZmcBZP5aL_jr7iVFHqpMzWppiWL-G0Y8SUF20p2_aV3Ux8R1npPVagVqd6h_kmbQl--9SI4
+
+  var transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
     auth: {
+      type: "OAuth2",
       user: process.env.user,
-      pass: process.env.pass
+      clientId: process.env.clientid,
+      clientSecret: process.env.clientsecret,
+      refreshToken: process.env.refreshtoken,
+      accessToken: process.env.accesstoken
     }
   });
-
-  const mailOptions = {
-    from: "gradsweexec@gmail.com", // sender address
-    to: "gradsweexec@gmail.com", // list of receivers
-    subject: "GradSWE Page Contact", // Subject line
-    html: output // plain text body
+  var mail = {
+    from: "gradsweexec@gmail.com",
+    to: "gradsweexec@gmail.com",
+    subject: "GradSWE Page Contact Email",
+    text: "Email Contact",
+    html: output
   };
-
-  smtpTrans.sendMail(mailOptions, (err, info) => {
+  transporter.sendMail(mail, (err, info) => {
     if (err) {
       return console.log(err);
+    } else {
+      res.render("success");
     }
-    res.render("success");
   });
 });
 // app.listen(process.env.port || port, () => {
