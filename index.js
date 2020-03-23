@@ -53,7 +53,7 @@ app.post("/send", (req, res) => {
   });
   var mail = {
     from: "gradsweexec@gmail.com",
-    to: "gradsweexec@gmail.com, gradswe_exec@virginia.edu, njm9eg@virginia.edu",
+    to: "njm9eg@virginia.edu",
     subject: "GradSWE Page Contact Message",
     text: "Message from GradSWE Page",
     html: output
