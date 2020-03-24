@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 // var sitemap = require("express-sitemap")();
 // sitemap.generate(app);
-router.get("/sitemap.xml", function(req, res) {
+app.get("/sitemap.xml", function(req, res) {
   res.sendFile("sitemap.xml");
 });
 
