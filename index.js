@@ -10,6 +10,9 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+var sitemap = require("express-sitemap")();
+sitemap.generate(app);
+
 app.get("/", (req, res) => res.render("index"));
 app.get("/missionstatement", (req, res) => res.render("missionstatement"));
 app.get("/exec", (req, res) => res.render("exec"));
