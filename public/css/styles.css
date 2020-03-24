@@ -632,7 +632,6 @@ nav {
   height: 60vh;
   opacity: 80%;
   object-fit: cover;
-  object-position: ;
 }
 .social .centertext {
   position: absolute;
@@ -842,23 +841,3 @@ textarea {
 }
 
 /* Contact End */
-/* Contact Page Success Start */
-/* .success {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
-  color: #4b4563;
-  padding: 5rem 10rem;
-  height: 70vh;
-  display: flex;
-}
-.success .title {
-  display: flex;
-}
-
-.success .title h1 {
-  text-align: center;
-  font-size: 4rem;
-  margin: auto;
-} */
-/* Contact Page Success End */
